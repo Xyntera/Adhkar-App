@@ -353,6 +353,17 @@ export default function App() {
     getUserLocation();
   }, []);
 
+useEffect(() => {
+  // Update browser title based on what the user is doing
+  if (view === 'home') {
+    document.title = "Dhikr Daily | Morning & Evening Adhkar";
+  } else if (selectedCategory) {
+    // Capitalize first letter
+    const catName = selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1);
+    document.title = `${catName} Adhkar | Dhikr Daily`;
+  }
+}, [view, selectedCategory]);
+
   const checkReminders = () => {
     const hour = new Date().getHours();
     let type = null;
