@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Search, Play, Pause, SkipForward, SkipBack, Volume2, VolumeX,
-  BookOpen, Moon, Sun, Heart, ArrowLeft, ChevronRight, Loader2,
-  Music, List, Globe, X, Settings, Home, BookMarked, Mic2
+  BookOpen, Moon, Sun, ArrowLeft, Loader2,
+  List, Globe, X, BookMarked, Mic2
 } from 'lucide-react';
 
 // ─── STYLES ───────────────────────────────────────────────────────────────────
